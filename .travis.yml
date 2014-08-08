@@ -10,7 +10,8 @@ script:
   - php -i
 
 notifications:
-  emails:
-    - e.ogura@moregames.co.jp
-  on_success: always # default: change
-  on_failure: always
+     email:
+         recipients:
+             - e.ogura@moregames.co.jp
+         on_success: change
+         on_failure: always
