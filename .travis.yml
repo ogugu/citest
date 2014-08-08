@@ -3,7 +3,7 @@ php:
   - "5.4"
   - "5.3"
 before_install:
-  - yum list
+  - ls -l /tmp
 before_script:
   - php -v
 script:
