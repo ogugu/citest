@@ -1,17 +1,19 @@
 language: php
 php:
-  - "5.4"
-  - "5.3"
+- '5.4'
+- '5.3'
 before_install:
-  - ls -l /tmp
+- ls -l /tmp
 before_script:
-  - php -v
+- php -v
 script:
-  - php -i
-
+- php -i
 notifications:
-     email:
-         recipients:
-             - e.ogura@moregames.co.jp
-         on_success: change
-         on_failure: always
+  email:
+    recipients:
+    - e.ogura@moregames.co.jp
+    on_success: always
+    on_failure: always
+  hipchat:
+    rooms:
+      secure: QpUdddNCpPDLbZsIMD0TstuiyVZIMai2XP3HlIqfVtCjxIS5ECEplqfJTXDdU63vs65ebNyFiSLxOas26bZn0dRxdzbJ+Bmzgx3TvRaYt8EAbBiPcIxK4McAs7weZxup/IbYv8xB19Fj7JfABLczk3gbSziuwFxKDtjjXd1FaCo=
