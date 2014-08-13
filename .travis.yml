@@ -9,6 +9,11 @@ before_script:
 script:
 - php -i
 notifications:
+     email:
+         recipients:
+             - e.ogura@moregames.co.jp
+         on_success: always
+         on_failure: always
   hipchat:
     rooms:
       secure: HfLrJg0Rq0v5evNTUDso2Xr/PVYmxZL445sga+bPLftDfeYXbaIQTiFV9JRqA8Oq5He40zjNckp5OoD2z2mfcxvywTg0bj4QxlrYBxpsXJC6+Pl1kPjJ1eVfFoUSBTJyLIaY8/EEaDEfmDZ80lakaBvaM056JBE7pECUhra1+BE=
